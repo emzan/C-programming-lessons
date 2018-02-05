@@ -21,7 +21,7 @@ int main ()
     break;
 
     default:
-    puts("You are all wrong.");
+    puts("This is not a choice.");
 
   }
 
