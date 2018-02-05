@@ -7,9 +7,9 @@ int main ()
 
   x=21;
 
-  puts("For breakfast free dessert ");
+  puts("Everyone gets free dinner!");
   cheers();
-  puts("For breakfast I had it ");
+  puts("Everyone gets free dessert!");
   cheers();
   printf("%d\n",x);
   puts("Everyone pays higher taxes!\n");
