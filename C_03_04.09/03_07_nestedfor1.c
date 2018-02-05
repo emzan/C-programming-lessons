@@ -12,7 +12,6 @@ int main ()
   {
     for ( column = 0; column < 10; column++)
     {
-      /* code */
 
       r = rand();
       printf("%2d\t",r % 100);
