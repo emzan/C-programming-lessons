@@ -3,5 +3,14 @@
 
 int main()
 {
-
+  int c;
+  
+  do
+  {
+    c = getchar();
+    c = toupper(c);
+    putchar(c);
+  }
+  while( c != '\n');
+  
 }
