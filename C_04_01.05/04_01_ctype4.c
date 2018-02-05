@@ -19,6 +19,8 @@ int main()
 
 int iscap(int ch)
 {
-
-
+  if( ch < 'A' || ch > 'Z')
+    return(0);
+  else
+    return(1);
 }
