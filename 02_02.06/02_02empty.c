@@ -2,7 +2,7 @@
 
 int main()
 {
-  puts("I am  no longer a dummy");
-  return 3;
-
+  puts("Thrilled to meet you.");
+  
+  return (0);
 }
