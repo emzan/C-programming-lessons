@@ -18,7 +18,7 @@ int main ()
   }
   else
   {
-    printf("%d is equal to 10.\n", a);
+    printf("%d is 10.\n", a);
   }
 
   return(0);
