@@ -13,4 +13,5 @@ int main()
   }
   while( c != '\n');
   
+  return(0);
 }
