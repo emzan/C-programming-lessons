@@ -5,5 +5,22 @@
 
 int main()
 {
-
+  int grid[ROWS][COLUMNS];
+  int x,y;
+  
+  
+  for(x=0;x<ROWS;x++)
+    for(y=0;y<COLUMNS;y++)
+      grid[x][y] = 0;
+  
+  
+  for(x=0;x<ROWS;x++)
+  {
+    for(y=0;y<COLUMNS;y++)
+      printf("%d.%d: %d\t",x,y,grid[x][y]);
+    putchar('\n');
+  }
+  
+  return(0);
+  
 }
