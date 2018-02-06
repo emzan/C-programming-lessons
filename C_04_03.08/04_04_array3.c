@@ -12,7 +12,10 @@ int main()
   for (x = 0; x < MEALS; x++)
   {
     printf("Calories at meal %d: ",x+1);
-    scanf("%id",&calories[x]);
+    scanf("%d",&calories[x]);
+    total = total + calories[x];
   }
+  printf("You had a total of %d calories.\n",total);
+  
   return (0);
 }
