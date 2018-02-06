@@ -8,7 +8,8 @@ int main()
   n = 0;
   while( hello[n] != '\0')
   {
-  
+    putchar(hello[n]);
+    n++;
   }
   
   return(0);
