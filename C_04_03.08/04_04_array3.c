@@ -1,13 +1,18 @@
 #include <stdio.h>
 
+#define MEALS 3
+
 int main()
 {
-  float temp[4] = { 84.9, 83.7, 85.8, 88.2 };
-  int x;
-
-  printf("Local temperatures:\n");
-  for (x = 0; x < 4; x++)
-    printf("Station %d: %.1f\n",x,temps[x]);
-
+  int calories[MEALS];
+  int x,total;
+  
+  total - 0;
+  puts("Calorie Counter");
+  for (x = 0; x < MEALS; x++)
+  {
+    printf("Calories at meal %d: ",x+1);
+    scanf("%id",&calories[x]);
+  }
   return (0);
 }
