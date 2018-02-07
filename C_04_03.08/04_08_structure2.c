@@ -11,7 +11,7 @@ int main()
     67
   };
   
-  printf("%s was %d years old\n,president.name,president.age);
+  printf("%s was %d years old\n",president.name,president.age);
   
   return(0);
 }
