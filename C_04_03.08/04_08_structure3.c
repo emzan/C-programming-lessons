@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -8,11 +9,11 @@ int main()
   };
   struct person president;
   
-  president.name = "George Washington";
+  strcpy(president.name,"George Washington");
   president.age = 67;
   
   printf("%s was %d years old\n",president.name,president.age);
   
-  return(0)';
+  return(0);
 
 }
