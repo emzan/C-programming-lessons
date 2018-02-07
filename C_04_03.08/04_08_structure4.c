@@ -20,8 +20,10 @@ int main()
   friend.birthday.day = 1;
   
   printf("My friend %s was born on %d/%d/%d\n",
-  friend.name,
-  );
+         friend.name,
+         friend.birthday.month,
+         friend.birthday.day,
+         friend.birthday.year);
   
-  return(0)';
+  return(0);
 }
