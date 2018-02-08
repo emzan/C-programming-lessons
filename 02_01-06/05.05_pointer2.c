@@ -6,7 +6,7 @@ int main()
 	char *s;
 	
 	s = string;
-	while(*s')
+	while(*s)
 	{
 		putchar(++*s);
 		s++;
