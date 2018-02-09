@@ -1,24 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 #define SIZE 10
 
+void displayArray(int *a);
+
 int main()
 {
-  int numbers[SIZE];
-  int x,outer,inner,temp;
-
-
-  srand((unsigned)time(NULL));
-  for (x = 0; x < SIZE; x++)
-  numbers[x] = rand() % 100 + 1;
+  int numbers[SIZE] = { 55, 44, 99, 11, 77, 22, 33, 88, 66, 0 };
+  int outer,inner,temp;
 
 
   puts("Unsorted array:");
-  for (x = 0; x < SIZE; x++)
-  printf(" %3d",numbers[x]);
-  putchar('\n');
+  displayArray(numbers);
 
 
   for (outer = 0; outer < SIZE; outer++)

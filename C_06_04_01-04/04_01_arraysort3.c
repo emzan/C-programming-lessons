@@ -4,10 +4,12 @@
 
 #define SIZE 10
 
+int compare(const void *a, const void *b);
+
 int main()
 {
   int numbers[SIZE];
-  int x,outer,inner,temp;
+  int x;
 
 
   srand((unsigned)time(NULL));
@@ -15,22 +17,13 @@ int main()
   numbers[x] = rand() % 100 + 1;
 
 
-  puts("Unsorted array:");
+  puts("Sorted array:");
   for (x = 0; x < SIZE; x++)
   printf(" %3d",numbers[x]);
   putchar('\n');
 
 
-  for (outer = 0; outer < SIZE; outer++)
-  for (inner = outer + 1; inner < SIZE; inner++)
-  {
-    if( number[outer] > numbers[inner])
-    {
-      temp = numbers[inner];
-      numbers[inner] = numbers[outer];
-      numbers[outer] = temp;
-    }
-  }
+  qsort(numbers,SIZE,sizeof(int),compare);
 
 
   puts("Sorted array:");
@@ -40,3 +33,5 @@ int main()
 
   return (0);
 }
+
+int compare(const void *a, const void *b)
