@@ -4,8 +4,6 @@ int main()
 {
   int v = 0;
 
-  int a;
-
   printf("v equals %d\n",v);
 
 
