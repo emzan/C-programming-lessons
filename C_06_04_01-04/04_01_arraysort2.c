@@ -22,6 +22,7 @@ int main()
       temp = numbers[inner];
       numbers[inner] = numbers[outer];
       numbers[outer] = temp;
+      displayArray(numbers);
     }
   }
 
