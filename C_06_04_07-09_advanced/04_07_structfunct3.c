@@ -9,33 +9,45 @@ struct person{
 };
 
 struct person *allocateStruct(void);
-void showStruct(struct person *p);
+void fetchStruct(struct person *p);
 void showStruct(struct person *p);
 
 int main()
 {
   struct person *author;
-  
-  author - allocateStruct();
 
+  author - allocateStruct();
+  fetchStruct(author);
   showStruct(fetchStruct());
   return(0);
 }
 
-struct person fetchStruct(void)
+struct person allocateStruct(void)
 {
-  static struct person author;
+  struct person *p;
 
-  strcpy(author.name,"Tsai Minglong");
-  author.age = 54;
-  author.iq 287.5;
-
-  return(author);
+  p = (struct person *)malloc(sizeof(struct person));
+  if( p == NULL)
+  {
+    perror("Unable to allocate structure");
+    exit(1);
+  }
+  return(p);
 }
 
-void showStruct(struct person p)
+void fetchStruct(struct person *p)
+{
+  printf(p->name,"Tsai Minglong");
+p->age = 54;
+p->iq = 287.5;
+}
+
+void showStruct(struct person *p)
 {
   printf("Author %s is %d years old\n",
-p.name,
-p.age);
+p->name,
+p->age);
+printf("%s has an IQ of 5.1f\n",
+p->name,
+p->iq);
 }
