@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <atdlib.h>
-#include <string.h>
+#include <time.h>
 
 #define SIZE 10
 
