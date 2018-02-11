@@ -3,15 +3,13 @@
 
 #define SIZE 1024
 
-
-
-int main() {
-
-
+int main() 
+{
     char *sto;
 
-    sto = (char *)malloc(sizeof(char)*SIZE);
-    if (sto == NULL) {
+    sto = malloc(sizeof(char)*SIZE);
+    if (sto == NULL) 
+    {
       puts("Memory error");
       return(1);
     }
