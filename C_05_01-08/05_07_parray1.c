@@ -15,7 +15,7 @@ int main() {
     int x;
 
     for(x=0;x<5;x++)
-    printf("%p\n",gang[x]);
+    printf("%s\n",gang[x]);
 
 
 
