@@ -7,7 +7,7 @@ int main()
   char grade;
 
   grade = gimmeAnA();
-  printf("On this test you received a %c.\n",grade);
+  printf("On this test you received alla %c.\n",grade);
 
   return (0);
 }
