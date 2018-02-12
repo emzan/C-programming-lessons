@@ -9,11 +9,11 @@ int main()
   int numbers[SIZE] = { 55, 44, 99, 11, 77, 22, 33, 88, 66, 0 };
   int outer,inner,temp;
 
-
+/* Display the unsorted array */
   puts("Unsorted array:");
   displayArray(numbers);
 
-
+/* Sort the array */
   for (outer = 0; outer < SIZE; outer++)
   for (inner = outer + 1; inner < SIZE; inner++)
   {
