@@ -42,7 +42,7 @@ void showArray(int *a)
 {
   int x;
 
-  for (x = 0; x < count; x++)
+  for (x = 0; x < SIZE; x++)
   printf(" %3d",a[x]);
   putchar('\n');
 }
