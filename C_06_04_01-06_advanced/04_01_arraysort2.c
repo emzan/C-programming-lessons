@@ -17,7 +17,7 @@ int main()
   for (outer = 0; outer < SIZE; outer++)
   for (inner = outer + 1; inner < SIZE; inner++)
   {
-    if( number[outer] > numbers[inner])
+    if( numbers[outer] > numbers[inner])
     {
       temp = numbers[inner];
       numbers[inner] = numbers[outer];
