@@ -11,21 +11,21 @@ int main()
   int numbers[SIZE];
   int x;
 
-
+/* Sort the array */
   srand((unsigned)time(NULL));
   for (x = 0; x < SIZE; x++)
   numbers[x] = rand() % 100 + 1;
 
-
+/* Display the sorted array */
   puts("Sorted array:");
   for (x = 0; x < SIZE; x++)
   printf(" %3d",numbers[x]);
   putchar('\n');
 
-
+/* Sort the array */
   qsort(numbers,SIZE,sizeof(int),compare);
 
-
+/* Display the sorted array */
   puts("Sorted array:");
   for (x = 0; x < SIZE; x++)
   printf(" %3d",numbers[x]);
