@@ -25,12 +25,15 @@ int main()
       displayArray(numbers);
     }
   }
+}
 
-
-  puts("Sorted array:");
-  for (x = 0; x < SIZE; x++)
-  printf(" %3d",numbers[x]);
-  putchar('\n');
-
-  return (0);
+void displayArray(int *a)
+{ 
+    int numbers[SIZE];
+    int x;
+    
+    puts("Sorted array:");
+    for (x = 0; x < SIZE; x++)
+    printf(" %3d",numbers[x]);
+    putchar('\n');
 }
