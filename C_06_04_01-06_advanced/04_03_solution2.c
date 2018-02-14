@@ -11,15 +11,15 @@ int main()
   char string[SIZE];
   int length;
 
-
+/* Get the string */
   printf("Type some text: ");
   fgets(string,SIZE,stdin);
   length = strlen(string);
 
-
+/* Sort the string */
   qsort(string,length,sizeof(char),compare);
 
-
+/* Display the sorted array */
   puts("Sorted string:");
   printf("%s\n",string);
 

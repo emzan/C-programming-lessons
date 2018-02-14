@@ -12,17 +12,17 @@ int main()
 {
   int numbers[SIZE];
 
-
+/* populate the array */
   populate(numbers);
 
-
+/* Display the unsorted array */
   puts("Unsorted array:");
   showArray(numbers);
 
-
+/* Sort the array */
   sortArray(numbers);
 
-
+/* Display the sorted array */
   puts("Sorted array:");
   showArray(numbers);
 
