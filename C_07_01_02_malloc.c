@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//By adding an asterisk we return a pointer to an integer
+//By adding an asterisk this line is going to return a pointer to an integer
 
 int* return_me(int);
 
