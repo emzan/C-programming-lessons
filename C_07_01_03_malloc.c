@@ -8,10 +8,10 @@ int main()
 {
     int x = 10;
     int *p = &x;
-    printf("p: %d\n",p);
+    printf("p: %p\n",p);
     
-    x = return_me(x);
-    printf("p: %d\n",p);
+    p = return_me(p);
+    printf("p: %p\n",p);
 
     return 0;
 }
