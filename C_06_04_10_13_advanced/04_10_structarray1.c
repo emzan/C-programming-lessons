@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-//commmits
+
 int main()
 {
 	struct weather{
