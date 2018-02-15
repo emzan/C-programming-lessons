@@ -10,20 +10,20 @@ struct stats{
   void fill_structure(struct stats *s);
   struct stats *create(void);
 
-int main() {
-
+int main()
+{
   struct stats *first;
   struct stats *current;
-  struct stats *new;
+  struct stats *new;    /* change name if necessary */
   int x;
 
+/* create first structure */
   first = create();
   current = first;
 
   for(x=0;x<5;x++)
   {
     if(x==0)
-
     {
 
       first = create();
@@ -39,19 +39,17 @@ int main() {
   }
   current->next = NULL;
 
-  current = first;
+  current = first;   /* reset the list */
   while (current)
   {
     printf("Account %05d:\t$%.2f\n",
-  current->account,
-current->balance);
-current = current->next;
+        current->account,
+        current->balance);
+    current = current->next;
   }
 
   return(0);
 }
-
-
 
 void fill_structure(struct stats *s)
  {
@@ -59,7 +57,7 @@ void fill_structure(struct stats *s)
   scanf("%d", &s->account);
   printf("Balance: $");
   scanf("%f", &s->balance);
-  s->next = NULL;/* code */
+  s->next = NULL;
 }
 
 struct stats *create(void)

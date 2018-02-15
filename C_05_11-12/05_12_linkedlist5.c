@@ -48,7 +48,7 @@ void fill_structure(struct stats *s)
   scanf("%d", &s->account);
   printf("Balance: $");
   scanf("%f", &s->balance);
-  s->next = NULL;/* code */
+  s->next = NULL;
 }
 
 struct stats *create(void)
