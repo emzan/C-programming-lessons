@@ -10,20 +10,20 @@ struct stats{
   void fill_structure(struct stats *s);
   struct stats *create(void);
 
-int main() {
-
+int main()
+{
   struct stats *first;
   struct stats *current;
-  struct stats *new;
+  struct stats *new;   // change name if necessary
   int x;
 
+/* create first structure */
   first = create();
   current = first;
 
   for(x=0;x<5;x++)
   {
     if(x==0)
-
     {
 
       first = create();
@@ -41,8 +41,6 @@ int main() {
 
   return(0);
 }
-
-
 
 void fill_structure(struct stats *s)
  {

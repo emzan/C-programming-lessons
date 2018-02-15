@@ -10,12 +10,13 @@ struct stats{
   void fill_structure(struct stats *s);
   struct stats *create(void);
 
-int main() {
-
+int main()
+{
   struct stats *first;
   struct stats *current;
-  struct stats *new;
+  struct stats *new;  // change name if necessary
 
+/* create first structure */
   first = create();
   current = first;
 
@@ -24,17 +25,17 @@ int main() {
   return(0);
 }
 
-
-
+/* Fill a structure */
 void fill_structure(struct stats *s)
  {
   printf("Account number: ");
   scanf("%d", &s->account);
   printf("Balance: $");
   scanf("%f", &s->balance);
-  s->next = NULL;/* code */
+  s->next = NULL;
 }
 
+/* Allocate storage for one new structure */
 struct stats *create(void)
 {
   struct stats *baby;
@@ -45,6 +46,6 @@ struct stats *create(void)
     puts("Memory error");
     exit(1);
   }
- 
+
   return(baby);
 }
