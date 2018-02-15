@@ -13,16 +13,16 @@ int main() {
 
   struct stats *first;
   struct stats *current;
-  struct stats *new;
+  struct stats *new;    // change name if necessary
   int a = 1;
 
-
+/* create first structure */
   first = create();
 
   return(0);
 }
 
-
+/* Allocate storage for one new structure */ 
 struct stats *create(void)
 {
   struct stats *baby;
