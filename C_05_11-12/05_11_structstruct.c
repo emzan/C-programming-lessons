@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-int main() {
-
+int main() 
+{
   struct date{
     int month;
     int day;
@@ -19,11 +18,11 @@ int main() {
   }
 
   printf("Enter your birth year: ");
-  scanf("%d", &birthday->year);
+  scanf("%d",&birthday->year);
   printf("Enter your birth month: ");
-  scanf("%d", &birthday->month);
+  scanf("%d",&birthday->month);
   printf("Enter your birth day: ");
-  scanf("%d", &birthday->day);
+  scanf("%d",&birthday->day);
 
   printf("You were born on %d/%d/%d\n",
 birthday->month,
@@ -31,6 +30,4 @@ birthday->day,
 birthday->year);
 
 return(0);
-
-
-    }
+}
