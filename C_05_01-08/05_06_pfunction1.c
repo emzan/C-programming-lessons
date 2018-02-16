@@ -2,9 +2,8 @@
 
 void minus10(int *v);
 
-int main() {
-
-
+int main()
+{
     int value = 100;
 
     printf("Value is %d\n", value);
@@ -12,7 +11,6 @@ int main() {
     printf("Value is %d\n", value);
 
   return(0);
-
 }
 
 void minus10(int *v) {
