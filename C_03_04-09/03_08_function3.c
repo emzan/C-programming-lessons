@@ -14,7 +14,6 @@ int main ()
   printf("%d\n",x);
   puts("Everyone pays higher taxes!\n");
 
-
   return(0);
 }
 
@@ -26,6 +25,4 @@ void cheers(void)
     printf("Huzzah! ");
     return;
     putchar('\n');
-
-
 }
