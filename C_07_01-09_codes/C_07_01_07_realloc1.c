@@ -17,7 +17,7 @@ int* create_int_array(int lenght)
     return a;
   }
 
-  for (int i = 0; i < lrnght; i++) {
+  for (int i = 0; i < lenght; i++) {
     a[i] = i*1000;
   }
   return a;
