@@ -3,11 +3,9 @@
 
 int main()
 {
-  int a_size = 11;
+  int a_size = 10;
   int new_a_size =0;
-  int *a = NULL;
-
-  a = malloc(a_size * sizeof(int));
+  int *a = malloc(a_size * sizeof(int));
   if(a == NULL)
   {
     fprintf(stderr,"Memory allocating error!\n");
@@ -15,7 +13,7 @@ int main()
   }
 
   for(int i=0; i<a_size; i++){
-    a[i] = i*12;
+    a[i] = i*10;
   }
 
   for (int i = 0; i < a_size; i++) {
@@ -25,13 +23,15 @@ int main()
   int *tmp = NULL;
   new_a_size = a_size * 2;
 
+  printf("Reallocating a!\n");
   tmp = realloc(a,new_a_size*sizeof(int));
 
   if(tmp == NULL)
   {
-    fprintf(stderr,"Memory reallocating error!\n");
+    fprintf(stderr,"Error reallocating a!\n");
     exit(1);
   }
+  printf("Done.\n");
 
   a = tmp;
 
