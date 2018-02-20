@@ -19,7 +19,7 @@ void free_int_matrix(int **m,int nrows) {
 void print_int_matrix(int **m, int nrows, int ncols) {
   for (int i = 0; i < nrows; i++) {
     for (int j = 0; j < ncols; j++) {
-      printf("%d ",m[i][j]);
+      printf("%.2d ",m[i][j]);
     }
     printf("\n");
   }
