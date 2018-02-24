@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <atdlib.h>
+#include <stdlib.h>
 #include <time.h>
 
 int *generate(void);
@@ -18,7 +18,7 @@ int main()
   return(0);
 }
 
-int generate(void)
+int *generate(void)
 {
   static int array[10];
   int x;
