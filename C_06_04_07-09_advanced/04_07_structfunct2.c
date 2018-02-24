@@ -22,7 +22,7 @@ struct person fetchStruct(void)
 
   strcpy(author.name,"Tsai Minglong");
   author.age = 54;
-  author.iq 287.5;
+  author.iq = 287.5;
 
   return(author);
 }
