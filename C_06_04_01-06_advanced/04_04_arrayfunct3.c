@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <atdlib.h>
+#include <stdlib.h>
 #include <time.h>
 
-void *generate(int *a);
+void generate(int *a);
 
 int main()
 {
