@@ -22,7 +22,7 @@ int main()
   printf(" %3d",numbers[x]);
   putchar('\n');
 
-/* Sort the array */
+/* Sort the array. The following is a quicksort method, more efficient, prototyped in the sdtlib */
   qsort(numbers,SIZE,sizeof(int),compare);
 
 /* Display the sorted array */
