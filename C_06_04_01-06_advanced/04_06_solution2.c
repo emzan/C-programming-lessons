@@ -20,11 +20,11 @@ void modify(char *s)
 {
   int x = 0;
 
-  while(s[x]);
+  while(s[x])
   {
     s[x] = toupper(s[x]);
     if( s[x] == ' ')
-    s[x] = ' ';
+        s[x] = '_';
     x++;
   }
 }
