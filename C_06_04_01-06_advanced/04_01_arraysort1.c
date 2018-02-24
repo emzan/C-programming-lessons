@@ -20,7 +20,7 @@ int main()
   printf(" %3d",numbers[x]);
   putchar('\n');
 
-/* Sort the array */
+/* Sort the array. The following is a bubble sorting method, not very efficient, but...simple to understand! */
   for (outer = 0; outer < SIZE; outer++)
   for (inner = outer + 1; inner < SIZE; inner++)
   {
