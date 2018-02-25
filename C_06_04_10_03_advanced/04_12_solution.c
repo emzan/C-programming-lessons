@@ -7,13 +7,13 @@ int main()
     float temp;
   };
   struct weather week[7] = {
-    {"Sunday", 72.5 },
-    {"Monday", 72.5 },
-    {"Tuesday", 72.5 },
-    {"Wednesday", 72.5 },
-    {"Thursday", 72.5 },
-    {"Friday", 72.5 },
-    {"Saturday", 72.5 }
+      {"Sunday", 72.5 },
+      {"Monday", 68.4 },
+      {"Tuesday", 75.0 },
+      {"Wednesday", 73.8 },
+      {"Thursday", 65.1 },
+      {"Friday", 72.8 },
+      {"Saturday", 75.2 }
   };
   struct weather t;
   int x,outer,inner;
