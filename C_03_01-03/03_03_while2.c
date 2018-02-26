@@ -16,9 +16,6 @@ srand((unsigned)time(NULL));
     x--;
   }
 
-
-
-
   return(0);
 
 }
