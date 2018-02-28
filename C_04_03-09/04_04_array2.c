@@ -7,7 +7,7 @@ int main()
 
   printf("Local temperatures:\n");
   for (x = 0; x < 4; x++)
-    printf("Station %d: %.1f\n",x,temps[x]);
+    printf("Station %d: %.1f\n",x,temp[x]);
 
   return (0);
 }

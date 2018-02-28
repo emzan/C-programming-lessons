@@ -6,8 +6,8 @@ int main()
 {
   int calories[MEALS];
   int x,total;
-  
-  total - 0;
+
+  total = 0;
   puts("Calorie Counter");
   for (x = 0; x < MEALS; x++)
   {
@@ -16,6 +16,6 @@ int main()
     total = total + calories[x];
   }
   printf("You had a total of %d calories.\n",total);
-  
+
   return (0);
 }
