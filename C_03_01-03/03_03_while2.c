@@ -15,6 +15,5 @@ srand((unsigned)time(NULL));
     printf("%2d\n", r % 100);
     x--;
   }
-
   return(0);
 }
