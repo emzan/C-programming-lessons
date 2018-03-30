@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\C_02_01-06"
+    "\\C_02_01-06",
+    "\\C_06_01-04_advanced"
   ],
-  "SelectedNode": "\\C_03_04-09",
+  "SelectedNode": "\\C_02_01-06\\02_01_dummy.c",
   "PreviewInSolutionExplorer": false
 }
